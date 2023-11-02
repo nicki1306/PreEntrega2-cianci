@@ -1,0 +1,149 @@
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/gafas-sol-zapatos-color-blanco.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.barra_superior {
+    background-color: transparent;
+    height: 10px;
+    align-items: center;
+    margin-top: 50px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-family: 'Gowun Batang', serif;
+    color: azure;
+    float: unset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.logo span {
+    color: rgb(2, 28, 28);
+}
+
+.menu {
+
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding-inline-start: 1rem;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: darkcyan;
+    padding-bottom: 5px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulotienda {
+    display: flex;
+    float: inline-start;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulotienda h3 {
+    font-family: 'Gowun Batang', serif;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-item1 {
+    width: 23%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-image: url('imagenes/zapato\ invierno/zapato verano.jpg');
+}
+
+.barra1 {
+    font-family: 'Gowun Batang', serif;
+    color: darkcyan;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+}
+
+footer a {
+    color: darkcyan;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    background-color: white;
+    width: 350px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+@media full-screen-image and (max-width: 575.98px)
