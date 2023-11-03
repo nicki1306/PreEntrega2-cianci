@@ -5,19 +5,17 @@
     background-size: cover;
     margin: 0;
     padding: 0;
-
 }
 
 .barra_superior {
     background-color: transparent;
     align-items: center;
-
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
 
-.logo{
+.logo {
     width: 100%;
     float: inline-start;
 }
@@ -40,7 +38,7 @@
 
 }
 
-.menu a:hover{
+.menu a:hover {
     color: blue !important;
 }
 
@@ -61,12 +59,10 @@ main {
     margin-bottom: 50px;
 }
 
-.bg-darkcyan{
+.bg-darkcyan {
     background-color: darkcyan;
 }
-.text-darkcyan{
-    color: #a96b34;
-}
+
 
 footer {
     display: flex;
@@ -80,7 +76,7 @@ footer {
     height: 10px;
 }
 
-footer span{
+footer span {
     color: darkcyan;
 }
 
@@ -92,7 +88,7 @@ footer span{
 }
 
 form {
-    background-color: white ;
+    background-color: white;
     width: 350px;
     padding: 1.5rem;
     border-radius: 10px;
