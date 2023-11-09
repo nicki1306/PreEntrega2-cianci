@@ -1,0 +1,100 @@
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/gafas-sol-zapatos-color-blanco.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.barra_superior {
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100%;
+    float: inline-start;
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+    gap: 1rem;
+    padding-inline-start: 1rem;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: darkcyan;
+    padding-bottom: 5px;
+
+}
+
+.menu a:hover {
+    color: blue !important;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulotienda h3 {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.barra1 {
+    font-family: 'Gowun Batang', serif;
+    color: darkcyan;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bg-darkcyan {
+    background-color: darkcyan;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+}
+
+footer span {
+    color: darkcyan;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    background-color: white;
+    width: 350px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
