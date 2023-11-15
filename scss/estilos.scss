@@ -1,10 +1,14 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Dosis:wght@200;300;400;500;600;700;800&family=Gowun+Batang:wght@400;700&family=Roboto+Condensed:wght@700&display=swap");
 
-$blue: #0000ff;
-$black: black;
-$dark: darkcyan;
-$white: white;
+$color-primary: darkcyan;
+$color-text: black;
+$color-secundary: blue;
+$colorsub: white;
+
+$font-titulos: 'Darker Grotesque', sans-serif;
+$font-sub: 'Gowun Batang', serif;
+
 
 .full-screen-image {
     width: 100%;
@@ -33,21 +37,20 @@ $white: white;
     width: 100%;
     gap: 1rem;
     padding-inline-start: 1rem;
-}
 
-.menu li {
-    display: inline;
-}
+    li:nth-child(1){
+        display: inline;
 
-.menu li a {
-    text-decoration: none;
-    color: darkcyan;
-    padding-bottom: 5px;
+        a {
+            text-decoration: none;
+            $color-primary: darkcyan;
+            padding-bottom: 5px;
+        }
+    }
 
-}
-
-.menu a:hover {
-    color: blue !important;
+    a:hover {
+        $color-secundary: blue !important;
+    }
 }
 
 main {
@@ -57,30 +60,23 @@ main {
 }
 
 .titulotienda h3 {
-    font-family: 'Darker Grotesque', sans-serif;
+    $font-titulos: 'Darker Grotesque', sans-serif;
+    $color-text: black;
 }
 
 .barra1 {
-    font-family: 'Gowun Batang', serif;
-    color: darkcyan;
+    $font-sub: 'Gowun Batang', serif;
+    $color-primary: darkcyan;
     text-align: center;
     margin-bottom: 50px;
 }
 
+card:nth-child(1)
+.bg-darkcyan
+
 .bg-darkcyan {
     background-color: darkcyan;
 }
-
-$font1: gowun batang;
-$font2: serif;
-$font3: darker grotesque;
-$font4: sans-serif;
-
-$color1: darkcyan ;
-$color-primary: blue; 
-
-
-
 
 footer {
     display: flex;
@@ -92,10 +88,15 @@ footer {
     bottom: 0;
     width: 100%;
     height: 10px;
+
+    span {
+        color: darkcyan;
+    }
 }
 
-footer span {
-    color: darkcyan;
+
+.caja{
+    background-color: black;
 }
 
 .contacto {
@@ -107,12 +108,13 @@ footer span {
 
 form {
     background-color: white;
+    $font-titulos: 'Darker Grotesque', sans-serif;
     width: 350px;
-    padding: 1.5rem;
+    padding: 5rem;
     border-radius: 10px;
-    color: black;
+    $color-text: black;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-
+    gap: 5rem;
 }
+
