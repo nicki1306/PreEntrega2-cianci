@@ -1,104 +1,123 @@
-@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Dosis:wght@200;300;400;500;600;700;800&family=Gowun+Batang:wght@400;700&family=Roboto+Condensed:wght@700&display=swap");
-
 .full-screen-image {
-    width: 100%;
-    height: 100%;
-    background-image: url('../imagenes/gafas-sol-zapatos-color-blanco.jpg');
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imagenes/gafas-sol-zapatos-color-blanco.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .barra_superior {
-    background-color: transparent;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .logo {
-    width: 100%;
-    float: inline-start;
+  width: 100%;
+  float: inline-start;
 }
 
 .menu {
-    list-style: none;
-    width: 100%;
-    gap: 1rem;
-    padding-inline-start: 1rem;
+  list-style: none;
+  width: 100%;
+  gap: 1rem;
+  padding-inline-start: 1rem;
+  display: flex;
+  gap: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: space-around;
 }
-
 .menu li {
-    display: inline;
+  display: inline;
+  height: 2rem;
 }
-
 .menu li a {
-    text-decoration: none;
-    color: darkcyan;
-    padding-bottom: 5px;
-
+  text-decoration: none;
+  transition: font-size 0.3s ease;
+  color: darkcyan;
+  padding-bottom: 5px;
 }
-
-.menu a:hover {
-    color: blue !important;
+.menu li a:hover {
+  color: blue;
+  font-size: calc(1em + 4px);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.titulotienda h3 {
-    font-family: 'Darker Grotesque', sans-serif;
+.titulo {
+  font-family: "Darker Grotesque", sans-serif;
+  color: darkcyan;
 }
 
+.sub p {
+  color: black;
+}
 
 .barra1 {
-    font-family: 'Gowun Batang', serif;
-    color: darkcyan;
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.bg-darkcyan {
-    background-color: darkcyan;
+card:nth-child(1) .bg-darkcyan .bg-darkcyan {
+  background-color: darkcyan;
 }
-
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+}
+footer span {
+  color: darkcyan;
 }
 
-footer span {
-    color: darkcyan;
+.caja {
+  background-color: black;
 }
 
 .contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 form {
-    background-color: white;
-    width: 350px;
-    padding: 1.5rem;
-    border-radius: 10px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-
+  background-color: white;
+  width: 350px;
+  padding: 5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
+
+.temporadas .col-6:nth-child(1) .card {
+  background-color: #00dfbe;
+}
+.temporadas .col-6:nth-child(2) .card {
+  background-color: #46ffe3;
+}
+.temporadas .col-6:nth-child(3) .card {
+  background-color: #acfff3;
+}
+.temporadas .col-6:nth-child(4) .card {
+  background-color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */

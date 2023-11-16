@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "compile-sass": "sass scss/estilos.scss css/estilos.css"
+  },
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

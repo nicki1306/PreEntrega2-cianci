@@ -70,9 +70,14 @@ main {
     align-items: center;
 }
 
-.titulotienda h3 {
-    $font-titulos: 'Darker Grotesque', sans-serif;
-    $color-text: black;
+.titulo{
+    font-family: $font-titulos;
+    color: $color-primary;
+}
+
+.sub p {
+    color: $color-text;
+    $font-sub: 'Gowun Batang', serif;
 }
 
 .barra1 {
