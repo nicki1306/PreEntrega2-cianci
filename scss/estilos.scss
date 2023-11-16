@@ -1,9 +1,19 @@
+@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Dosis:wght@200;300;400;500;600;700;800&family=Gowun+Batang:wght@400;700&family=Roboto+Condensed:wght@700&display=swap");
+
+$color-primary: darkcyan;
+$color-text: black;
+$color-secundary: blue;
+$colorsub: white;
+
+$font-titulos: 'Darker Grotesque', sans-serif;
+$font-sub: 'Gowun Batang', serif;
+
 
 .full-screen-image {
     width: 100%;
     height: 100%;
-    background-image: url("../imagenes/gafas-sol-zapatos-color-blanco.jpg");
+    background-image: url('../imagenes/gafas-sol-zapatos-color-blanco.jpg');
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -32,23 +42,26 @@
     height: 2rem;
     align-items: center;
     justify-content: space-around;
-}
 
-.menu li {
-    display: inline;
-    height: 2rem;
-}
+    li {
+        display: inline;
+        height: 2rem;
 
-.menu li a {
-    text-decoration: none;
-    transition: font-size 0.3s ease;
-    color: darkcyan;
-    padding-bottom: 5px;
-}
+        a {
+            text-decoration: none; // Eliminar subrayado predeterminado
+            transition: font-size 0.3s ease; // Agregar transición suave al cambio de tamaño de fuente
+            color: $color-primary;
+            padding-bottom: 5px;
 
-.menu li a:hover {
-    color: blue;
-    font-size: calc(1em + 4px);
+            &:hover {
+                color: $color-secundary;
+                font-size: calc(1em + 4px); // Aumentar el tamaño de fuente en 4px al pasar el mouse
+            }
+        }
+    }
+
+
+
 }
 
 main {
@@ -57,7 +70,14 @@ main {
     align-items: center;
 }
 
+.titulotienda h3 {
+    $font-titulos: 'Darker Grotesque', sans-serif;
+    $color-text: black;
+}
+
 .barra1 {
+    $font-sub: 'Gowun Batang', serif;
+    $color-primary: darkcyan;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -76,11 +96,12 @@ footer {
     bottom: 0;
     width: 100%;
     height: 10px;
+
+    span {
+        color: darkcyan;
+    }
 }
 
-footer span {
-    color: darkcyan;
-}
 
 .caja {
     background-color: black;
@@ -95,26 +116,28 @@ footer span {
 
 form {
     background-color: white;
+    $font-titulos: 'Darker Grotesque', sans-serif;
     width: 350px;
     padding: 5rem;
     border-radius: 10px;
+    $color-text: black;
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
 
-.temporadas .col-6:nth-child(1) .card {
-    background-color: #00dfbe;
-}
+$total-temporadas: 4;
+$color-celeste: rgb(0, 121, 103);
 
-.temporadas .col-6:nth-child(2) .card {
-    background-color: #46ffe3;
-}
+// Iterar sobre cada temporada y asignar un tono de celeste diferente
+.temporadas {
+    $i: 1;
 
-.temporadas .col-6:nth-child(3) .card {
-    background-color: #acfff3;
-}
+    @while $i <=$total-temporadas {
+        .col-6:nth-child(#{$i}) .card {
+            background-color: lighten($color-celeste, $i * 20%);
+        }
 
-.temporadas .col-6:nth-child(4) .card {
-    background-color: white;
+        $i: $i + 1;
+    }
 }
