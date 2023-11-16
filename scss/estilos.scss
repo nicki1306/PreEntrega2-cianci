@@ -1,19 +1,9 @@
-@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600&family=Dosis:wght@200;300;400;500;600;700;800&family=Gowun+Batang:wght@400;700&family=Roboto+Condensed:wght@700&display=swap");
-
-$color-primary: darkcyan;
-$color-text: black;
-$color-secundary: blue;
-$colorsub: white;
-
-$font-titulos: 'Darker Grotesque', sans-serif;
-$font-sub: 'Gowun Batang', serif;
-
 
 .full-screen-image {
     width: 100%;
     height: 100%;
-    background-image: url('../imagenes/gafas-sol-zapatos-color-blanco.jpg');
+    background-image: url("../imagenes/gafas-sol-zapatos-color-blanco.jpg");
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -37,20 +27,28 @@ $font-sub: 'Gowun Batang', serif;
     width: 100%;
     gap: 1rem;
     padding-inline-start: 1rem;
+    display: flex;
+    gap: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    li:nth-child(1){
-        display: inline;
+.menu li {
+    display: inline;
+    height: 2rem;
+}
 
-        a {
-            text-decoration: none;
-            $color-primary: darkcyan;
-            padding-bottom: 5px;
-        }
-    }
+.menu li a {
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+    color: darkcyan;
+    padding-bottom: 5px;
+}
 
-    a:hover {
-        $color-secundary: blue !important;
-    }
+.menu li a:hover {
+    color: blue;
+    font-size: calc(1em + 4px);
 }
 
 main {
@@ -59,22 +57,12 @@ main {
     align-items: center;
 }
 
-.titulotienda h3 {
-    $font-titulos: 'Darker Grotesque', sans-serif;
-    $color-text: black;
-}
-
 .barra1 {
-    $font-sub: 'Gowun Batang', serif;
-    $color-primary: darkcyan;
     text-align: center;
     margin-bottom: 50px;
 }
 
-card:nth-child(1)
-.bg-darkcyan
-
-.bg-darkcyan {
+card:nth-child(1) .bg-darkcyan .bg-darkcyan {
     background-color: darkcyan;
 }
 
@@ -88,14 +76,13 @@ footer {
     bottom: 0;
     width: 100%;
     height: 10px;
-
-    span {
-        color: darkcyan;
-    }
 }
 
+footer span {
+    color: darkcyan;
+}
 
-.caja{
+.caja {
     background-color: black;
 }
 
@@ -108,13 +95,26 @@ footer {
 
 form {
     background-color: white;
-    $font-titulos: 'Darker Grotesque', sans-serif;
     width: 350px;
     padding: 5rem;
     border-radius: 10px;
-    $color-text: black;
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
 
+.temporadas .col-6:nth-child(1) .card {
+    background-color: #00dfbe;
+}
+
+.temporadas .col-6:nth-child(2) .card {
+    background-color: #46ffe3;
+}
+
+.temporadas .col-6:nth-child(3) .card {
+    background-color: #acfff3;
+}
+
+.temporadas .col-6:nth-child(4) .card {
+    background-color: white;
+}
